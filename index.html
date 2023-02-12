@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="contact.css" >
+    <link rel="stylesheet" type="text/css" href="services.css" >
+    <link rel="stylesheet" type="text/css" href="about.css" >
+    <link rel="stylesheet" type="text/css" href="video.css" >
+    <title>MGL SoftWare</title>
+    <style>
+       
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous">
+    </script>
+    <script>
+        function afficher(hash){
+            $('.active').removeClass('active').addClass('inactive');
+            $(hash).removeClass('inactive').addClass('active');
+        }
+
+        window.addEventListener('hashchange', () => {afficher(window.location.hash)});
+    </script>
+</head>
+<body>
+    <div class="">
+        <div class="topnav" id="myTopnav">
+          <a class="active1" href="#home">Home</a>
+          <a class="inactive1" href="#services">Services</a>
+          <a class="inactive1" href="#loisir" >Loisir</a>
+          <a class="inactive1" href="#contact">Contact</a>
+          <a class="inactive1" href="#about">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        
+    </div>
+   
+    <section id="home" class="active">
+        <div id="banner">
+            <h1>MGL SOFTWARE</h1>
+            <p>Mgl SoftWare Development</p>
+
+            <div class="home-2">
+                <div class="home-text">
+                    <p> We have a dedicated team of developers for web and mobile services.</p>    
+                    <button type="text">Hire US</button>
+                </div>
+                <div class="home-image">
+                    <img src="./Picture/Capture.PNG" >
+                </div>
+            </div>
+            <div class="banner-blue">
+                Let us make your dream project a reality.
+            </div>
+        </div>
+        <div class="list-services">
+            <div class="services-presentation">
+                <h2>Services</h2>
+                <p class="p">
+                    We are focused and specialized in the following areas;
+                </p>
+                <ul class="p">
+                    <li>Web development</li>
+                    <li>Database management</li>
+                    <li>Mobile development</li>
+                    <li>Online payment integration</li>
+                    <li>Server system configuration</li>
+                </ul>
+            </div>
+            <div class="services-image">
+                <img src="./Picture/Capture1.PNG">
+            </div>
+        </div>
+        <div class="list-services">
+            <div class="services-image">
+                <img src="./Picture/Capture2.PNG">
+            </div>
+            <div class="services-presentation">
+                <h2>Hey !</h2>
+                <p class="p">
+                    If you are interested, please let us know what kind of applications and websites you are looking for and we
+                     would be happy to send you a detailed proposal with time and effort included.
+                </p>
+                <button type="text">Hire US</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="videosC inactive" id="loisir">
+    
+        <h1>Loisir</h1>
+        <div id="videos">
+            <div class="left">
+                <ul>
+                    <li><a href="#"><img src="./icons/home.PNG">Home</a></li>
+                    <li><a href="#"><img src="./icons/shorts.PNG">Shorts</a></li>
+                    <li><a href="#"><img src="./icons/following.PNG">follow</a></li>
+                </ul>
+                <hr>
+
+                 <ul>
+                    <li><a href="#"><img src="./icons/bibliotheque.PNG">Biblio</a></li>
+                    <li><a href="#"><img src="./icons/history'.PNG">History</a></li>
+                    <li><a href="#"><img src="./icons/vos_videos.PNG">videos</a></li>
+                    <li><a href="#"><img src="./icons/a_regarde.PNG">To keep</a></li>
+                    <li><a href="#"><img src="./icons/like.PNG">Like</a></li>
+                </ul>
+                <hr>
+
+                <ul>
+                    <li><a href="#"><img src="./icons/paramet.PNG">Setting</a></li>
+                    <li><a href="#"><img src="./icons/HdesSign.PNG">History</a></li>
+                    <li><a href="#"><img src="./icons/aide.PNG">Help</a></li>
+                    <li><a href="#"><img src="./icons/comment.PNG">To keep</a></li>
+                </ul>
+            </div>
+    
+            <div id="right">
+    
+            </div>
+        </div>
+        <div id="lecteurVideo">
+            
+            <div id="lire">
+                
+                <div id="result">
+                    <hr>
+                    <h3>Commentaire</h3>
+                    <div id="profComm">
+						<svg height="50" width="50">
+							<circle cx="25" cy="25" r="20" stroke="#d838f2" stroke-width="3" fill="#d838f2" />
+						</svg>
+						<div class>
+							<span><strong>Marx509</strong></span><br>
+							<span >Bel misik bel video</span>
+                        </div>
+					</div>
+                </div>
+                <div id="comment">
+                    <h3>Laissez un Commentaire</h3>
+                    <form id="commentForm">
+                        <label for="surnom">Surnom</label><br>
+                        <input type="text" name="surnom" id="surnom"><br>
+                        <label for="Commentaire">Votre Commentaire</label><br>
+                       <textarea name="area" cols="30" rows="5" id="area"></textarea><br>
+                       <button type="submit">Commenter</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="listeVideo">
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="services" class="inactive">
+       <div class="services-banner">
+            <div class="Our-services">
+                <h1>Our Services</h1>
+                <span>We are over 20 years of experience</span>
+            </div>
+        </div>
+
+        <div class="present-services">
+            <div class="list-services">
+                <div class="services-image">
+                    <img src="./Picture/Web.jpg">
+                </div>
+                <div class="services-presentation">
+                    <h2>Web development</h2>
+                    <p>
+                        Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget 
+                        convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus 
+                        aliquet, dolor id imperdiet imperdiet, dui diam aliquet dui, a euismod metus enim ac velit. Vivamus eu tristique
+                         odio, vel tristique quam.
+                        <br><br>Proin eu molestie risus. Etiam suscipit pretium odio, at consectetur nisi. Sed ut dolor in augue cursus
+                         ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc 
+                         non magna orci. Aliquam commodo mauris ante.
+                    </p>
+                </div>
+            </div>
+            <div class="list-services">
+                <div class="services-presentation">
+                    <h2>Database management</h2>
+                    <p>
+                        Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget 
+                        convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus 
+                        aliquet, dolor id imperdiet imperdiet, dui diam aliquet dui, a euismod metus enim ac velit. Vivamus eu tristique
+                         odio, vel tristique quam.
+                        <br><br>Proin eu molestie risus. Etiam suscipit pretium odio, at consectetur nisi. Sed ut dolor in augue cursus
+                         ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc 
+                         non magna orci. Aliquam commodo mauris ante.
+                    </p>
+                </div>
+                <div class="services-image">
+                    <img src="./Picture/service_03.jpg">
+                </div>
+            </div>
+            <div class="list-services">
+                <div class="services-image">
+                    <img src="./Picture/data.jpg">
+                </div>
+                <div class="services-presentation">
+                    <h2>Depannage et Vente de materiels informatiques</h2>
+                    <p>
+                        Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget 
+                        convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus 
+                        aliquet, dolor id imperdiet imperdiet, dui diam aliquet dui, a euismod metus enim ac velit. Vivamus eu tristique
+                         odio, vel tristique quam.
+                        <br><br>Proin eu molestie risus. Etiam suscipit pretium odio, at consectetur nisi. Sed ut dolor in augue cursus
+                         ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc 
+                         non magna orci. Aliquam commodo mauris ante.
+                    </p>
+                </div>
+            </div>
+            <div class="list-services">
+                <div class="services-presentation">
+                    <h2>Mobile development</h2>
+                    <p>
+                        Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget 
+                        convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus 
+                        aliquet, dolor id imperdiet imperdiet, dui diam aliquet dui, a euismod metus enim ac velit. Vivamus eu tristique
+                         odio, vel tristique quam.
+                        <br><br>Proin eu molestie risus. Etiam suscipit pretium odio, at consectetur nisi. Sed ut dolor in augue cursus
+                         ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc 
+                         non magna orci. Aliquam commodo mauris ante.
+                    </p>
+                </div>
+                <div class="services-image">
+                    <img src="./Picture/service_03.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="inactive">
+        <h1 class="section-header">Contact</h1>
+        <div class="contact-wrapper">
+            <div id="form1">
+                <form id="btn">
+                    <h2>Contact Us</h2>
+        
+                    <div class="group">
+                        <label class='title' for="id_name">Full Name</label>
+                        <input type="text" name='name' id="id_name" placeholder="Enter your Full name" />
+                        <div class="required"></div>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="group">
+                        <label class='title' for="id_email">Email</label>
+                        <input type="email" name='email' id="id_email" placeholder="Enter your Email"/>
+                        <div class="required"></div>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="group">
+                        <label class='title' for="id_first_name">Subject</label>
+                        <input type="text" name='first_name' id="id_first_name" placeholder="Enter the subject"/>
+                        <div class="required"></div>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="group">
+                        <label class='title' for="id_password">Votre Message</label>
+                        <textarea name="message" rows="9" cols="30" placeholder="Your message"></textarea>
+                        <div class="required"></div>
+                        <div class="error"></div>
+                    </div>
+        
+                    <button type="submit" id="max1">submit</button>
+                </form>
+            </div>
+            
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text">#20, rue Jean Price Mars,Delmas 33, Port-au-Prince, Haiti</span></i></li>
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text"><a href="tel:1-212-555-5555" title="Give me a call">(509) 48175665/ (509) 35727879</a></span></i></li>
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text"><a href="mailto:lordeusmaxgary@gmail.com" title="Send me an email">electrotech@gmail.com</a></span></i></li>
+                </ul>
+
+                <hr>
+                <ul class="social-media-list">
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg></a>
+                        </a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>
+                        </a>
+                    </li>       
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </section> 
+
+    <section id="about" class="inactive">
+        <div class="services-banner">
+            <div class="Our-services">
+                <h1>About Us</h1>
+                <span>We are over 20 years of experience</span>
+            </div>
+        </div>
+        <div class="about-bg">
+            <div class="services-presentation">
+                <h6>OUR SOLID BACKGROUND ON FINANCE</h6>
+                <h1>Get to know about our company</h1>
+                <p>
+                    Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget 
+                    convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus 
+                    aliquet, dolor id imperdiet imperdiet, dui diam aliquet dui, a euismod metus enim ac velit. Vivamus eu tristique
+                     odio, vel tristique quam.
+                    <br><br>Proin eu molestie risus. Etiam suscipit pretium odio, at consectetur nisi. Sed ut dolor in augue cursus
+                     ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc 
+                     non magna orci. Aliquam commodo mauris ante.
+                </p>
+            </div>
+            <div class="services-image">
+                <img src="./Picture/about-image.jpg">
+            </div>
+        </div>
+        <div class="team-bg">
+            <div class="team">
+                <h1>Our Team members</h1>
+                <span>Let's make your dream project a reality</span>
+            </div>
+            <div class="our-team-members team-bg">
+                <div class="member">
+                    <div class="member-image">
+                        <img src="./Picture/1.jpg">
+                    </div>
+                    <div class="member-info">
+                        <h3>Marx LORDEUS</h3>
+                        <h4>Fullstack Developer, PDG MGL SOFTWARE </h4>
+                        <p>
+                            Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget 
+                            convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus 
+                        </p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-image">
+                        <img src="./Picture/IMG-20220218-WA0042~2.jpg">
+                    </div>
+                    <div class="member-info">
+                        <h3>Adhasa Shanah M</h3>
+                        <h4>Ingenieur Resseau, co-fondatrice MLG SOFTWARE</h4>
+                        <p>
+                            Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget 
+                            convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus 
+                        </p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-image">
+                       <img src="./Picture/Tiémoué Damèk 20221218_220725.jpg">
+                    </div>
+                    <div class="member-info">
+                        <h2>Timoue DAMEK</h2>
+                        <h4>DBA et directeur du departement Depannage</h4>
+                        <p>
+                            Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget 
+                            convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-clients">
+            <h1>What they say about us</h1>
+            <h4>TESTIMONIALS FROM OUR GREATEST CLIENTS</h4>
+            <div class="temoignage">
+                <div class="client">
+                    <h2>Vonise LORDEUS</h2>
+                    <h5>Chief Financial analist</h5>
+                    <p>
+                        Proin eu molestie risus. Etiam suscipit pretium odio, at consectetur nisi. Sed ut dolor in augue cursus
+                        ultrices. Vivamus mauris turpis, auctor vel facilisis in
+                    </p>
+                </div>
+                <div class="client">
+                    <h2>Mike Laurenz RENARD</h2>
+                    <h5>marketing head</h5>
+                    <p>
+                        Proin eu molestie risus. Etiam suscipit pretium odio, at consectetur nisi. Sed ut dolor in augue cursus
+                        ultrices. Vivamus mauris turpis, auctor vel facilisis in
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contrat</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Programing</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Mobile development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="videos.js"></script>
+    <script src="contact.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
